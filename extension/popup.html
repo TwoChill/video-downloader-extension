@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8">
+<style>
+:root{--bg:#fff;--tx:#1b1f24;--mu:#6a7280;--bd:#d8dce3;--ac:#2563eb}
+@media(prefers-color-scheme:dark){:root{--bg:#1b2027;--tx:#e8eaee;--mu:#9aa3b2;--bd:#323a46}}
+body{margin:0;width:400px;background:var(--bg);color:var(--tx);font:14px/1.4 system-ui,sans-serif;padding:12px}
+h1{font-size:15px;margin:0 0 8px}
+button{font:inherit;border:0;border-radius:6px;background:var(--ac);color:#fff;padding:6px 12px;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+.item{border:1px solid var(--bd);border-radius:8px;padding:8px;margin-top:8px}
+.item b{font-size:12px;background:var(--bd);border-radius:4px;padding:1px 6px;margin-right:6px}
+.url{font:12px ui-monospace,Consolas,monospace;color:var(--mu);word-break:break-all;margin:4px 0 6px;max-height:3.6em;overflow:hidden}
+#leeg{color:var(--mu);margin-top:8px}
+.status{margin-top:6px;font-weight:600;word-break:break-word}.ok{color:#16794c}.er{color:#b42318}
+</style></head><body>
+<h1>Video's op dit tabblad</h1>
+<div id="lijst"></div>
+<div id="leeg" hidden>Nog geen video-stream gezien. Druk op play in de video en open dit venster opnieuw.</div>
+<script src="names.js"></script><script src="popup.js"></script></body></html>

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Video Downloader Koppeling",
+  "version": "2.0.0",
+  "description": "Ziet video-streams (.m3u8, .mp4, .mp3) in een tabblad en slaat ze zelfstandig op: kies de map en de bestandsnaam, zonder app.",
+  "minimum_chrome_version": "109",
+  "permissions": ["webRequest", "tabs", "storage", "declarativeNetRequest", "offscreen", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Video Downloader", "default_popup": "popup.html" }
+}
